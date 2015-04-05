@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8" />
+    <title>Example Clock</title>
+    <script type="text/javascript" src="example.js"></script>
+    <link rel="stylesheet" type="text/css" href="example.css" />
+</head>
+<body>
+    <input type="button" value="button" id="btn" onclick="x()"/>
+    <input type="button" value="time" id="mover" />
+
+    <canvas id="circlecanvas" class="_12"
+            style="z-index : 9; "
+            width="50"
+            height="50"></canvas>
+
+    <canvas id="cirNumber6" class="_6"
+            style="z-index : 1; "
+            width="50"
+            height="50"></canvas>
+
+
+<script>
+
+    // clock points 1 - 12
+    for (var i = 1; i <= 12; i++)
+        createPoints ("circleCanvas" + i.toString(), "_" + i.toString() );
+    
+    // divs for major point labels 3,6,9,12
+    for (var i = 3; i <= 12; i+=3)
+        createPoints("cirNumber" + i.toString(), "_" + i.toString());
+
+    // put circles on all clock points.
+    for (var i = 1; i <= 12; i++)
+        paintCircles("circleCanvas" + i.toString(), "gray");
+
+    // divs for major point labels 3,6,9,12
+    for (var i = 3; i <= 12; i += 3)
+        numberPoints("cirNumber" + i.toString(), i);
+
+
+
+
+    //setInterval(function () { alert("t"); }, 5000);
+    var canvas = document.getElementById("circlecanvas");
+    var context = canvas.getContext("2d");
+  
+    context.fillStyle = 'yellow';
+    context.strokeStyle = 'yellow';
+    context.arc(25, 25, 20, 0, Math.PI * 2, false);
+    context.stroke();
+    context.font = "10px Georgia";
+    context.fillText('hello', 13,28);
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿body
+{
+    background-color : #c0c0c0;
+
+}
+
+._1 {
+    position : absolute;
+    left : 500px;
+    top : 60px;
+}
+
+._2 {
+    position : absolute;
+    left : 550px;
+    top : 110px;
+}
+._3 {   
+    position : absolute;
+    left : 600px;
+    top : 160px;
+}
+
+._4 {   
+    position : absolute;
+    left : 550px;
+    top : 210px;
+}
+._5 {   
+    position : absolute;
+    left : 500px;
+    top : 260px;
+}
+
+._6 {   
+    position : absolute;
+    left : 450px;
+    top : 310px;
+}
+
+._7 {   
+    position : absolute;
+    left : 400px;
+    top : 260px;
+}
+
+._8 {   
+    position : absolute;
+    left : 350px;
+    top : 210px;
+}
+
+._9 {   
+    position : absolute;
+    left : 300px;
+    top : 160px;
+}
+
+._10 {   
+    position : absolute;
+    left : 350px;
+    top : 110px;
+}
+._11 {   
+    position : absolute;
+    left : 400px;
+    top : 60px;
+}
+
+._12 {
+    position : absolute;
+    left : 450px;
+    top : 10px;
+}
